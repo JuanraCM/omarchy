@@ -426,8 +426,7 @@ show_update_hardware_menu() {
 }
 
 show_update_password_menu() {
-  case $(menu "Update Password" "  Drive Encryption\n  User") in
-  *Drive*) present_terminal omarchy-drive-set-password ;;
+  case $(menu "Update Password" "  User") in
   *User*) present_terminal passwd ;;
   *) show_update_menu ;;
   esac
