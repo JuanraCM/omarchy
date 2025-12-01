@@ -8,6 +8,7 @@ docker
 docker-buildx
 docker-compose
 dust
+elephant
 fcitx5
 fcitx5-gtk
 fcitx5-qt
@@ -47,6 +48,7 @@ playerctl
 polkit-gnome
 postgresql-libs
 power-profiles-daemon
+python-terminaltexteffects
 qt5-wayland
 ripgrep
 ruby
