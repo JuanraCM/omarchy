@@ -4,11 +4,11 @@ QR_CODE='
 █ ███ █ ▄▄▄▄▀▄▀▄▀ █ ███ █
 █ ▀▀▀ █ ▄█  ▄█▄▄▀ █ ▀▀▀ █
 ▀▀▀▀▀▀▀ ▀▄█ █ █ █ ▀▀▀▀▀▀▀
-▀▀█▀▀▄▀▀▀▀▄█▀▀█  ▀ █ ▀ █ 
+▀▀█▀▀▄▀▀▀▀▄█▀▀█  ▀ █ ▀ █
 █▄█ ▄▄▀▄▄ ▀ ▄ ▀█▄▄▄▄ ▀ ▀█
 ▄ ▄▀█ ▀▄▀▀▀▄ ▄█▀▄█▀▄▀▄▀█▀
 █ ▄▄█▄▀▄█ ▄▄▄  ▀ ▄▀██▀ ▀█
-▀ ▀   ▀ █ ▀▄  ▀▀█▀▀▀█▄▀  
+▀ ▀   ▀ █ ▀▄  ▀▀█▀▀▀█▄▀
 █▀▀▀▀▀█ ▀█  ▄▀▀ █ ▀ █▄▀██
 █ ███ █ █▀▄▄▀ █▀███▀█▄██▄
 █ ▀▀▀ █ ██  ▀ █▄█ ▄▄▄█▀ █
@@ -102,12 +102,7 @@ catch_errors() {
 
   # Offer options menu
   while true; do
-    options=()
-
-    # If online install, show retry first
-    if [[ -n ${OMARCHY_ONLINE_INSTALL:-} ]]; then
-      options+=("Retry installation")
-    fi
+    options=("Retry installation")
 
     # Add upload option if internet is available
     if ping -c 1 -W 1 1.1.1.1 >/dev/null 2>&1; then
