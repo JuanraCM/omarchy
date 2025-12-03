@@ -37,6 +37,7 @@ mako
 man-db
 mariadb-libs
 mise
+nautilus
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -81,3 +82,5 @@ woff2-font-awesome
 xdg-terminal-exec
 yay
 zoxide
+zsh
+zsh-completions
